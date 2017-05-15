@@ -1,13 +1,15 @@
 " Plugins
 call plug#begin()
 Plug 'tpope/vim-sensible'
-Plug 'morhetz/gruvbox'
+Plug 'tomasr/molokai'
 Plug 'vim-airline/vim-airline'
 Plug 'scrooloose/syntastic'
 Plug 'sheerun/vim-polyglot'
 Plug 'elmcast/elm-vim'
 Plug 'scrooloose/nerdtree'
 Plug 'jszakmeister/vim-togglecursor'
+Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+Plug 'pbogut/deoplete-elm'
 call plug#end()
 
 " General
@@ -20,9 +22,8 @@ set ignorecase
 set noswapfile
 set completeopt=longest,menuone
 
-" Gruvbox
-set background=dark
-colorscheme gruvbox
+" Molokai
+colorscheme molokai
 
 " Airline
 let g:airline_left_sep= '░'
